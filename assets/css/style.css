@@ -1,0 +1,337 @@
+
+
+
+
+
+
+
+
+
+/*---------- GLOBAL STYLES ----------*/
+:root {
+  --dark-blue: #112A46;
+  --light-blue: #ACC8E5;
+
+  --right-padding: 0 4.5rem 0 0;
+  --right-space: 4.5rem;
+
+  --flex-parent: flex;
+  --column: column;
+  --wrap: wrap;
+
+  --center: center;
+
+  --heading: 3.2rem;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+
+
+/*---------- HEADER ----------*/
+header {
+  /*position- stay at the top of viewport + foreground + padding on the right side*/
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: var(--right-padding);
+
+
+  /* Flex properties (children = header-items(h1 & nav))*/
+  display: var(--flex-parent);
+  justify-content: space-between;
+  align-items: baseline;
+
+  background-color: var(--dark-blue);
+  height: 7rem;
+}
+
+header h1 {
+  color: var(--dark-blue);
+  background-color: var(--light-blue);
+  font-size: var(--heading);
+  width: 25.5rem;
+  text-align: right;
+  padding: 0 0.5rem 0 0;
+  margin: 0.5rem 0 0 0;
+  /*top margin only*/
+}
+
+header nav {
+  margin: 0.2rem;
+  width: 40rem;
+}
+
+header a{
+  color: var(--light-blue);
+}
+
+#nav-list {
+  /* Flex properties of nav ul (children = .nav-list-items)*/
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.8rem;
+}
+
+.nav-list-items {
+  padding: 0.1rem;
+  margin: 0rem 0.5rem;
+  border-bottom: 2px solid var(--light-blue);
+  color: var(--light-blue);
+}
+/*---------- ////////// ----------*/
+
+
+/*---------- HERO SECTION ----------*/
+#hero-banner {
+  /*h2 and div background are placed absolute to #hero-banner, so this needs to be relative*/
+  position: relative;
+
+  background-image: url(../images/deco/sansi-matrix-by-lunapic.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 21rem;
+}
+
+#hero-banner div {
+  /*Position linked to container*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /*Create a filter for background image*/
+  background-color: rgba(0, 32, 112, 0.368);
+}
+
+#hero-banner h2 {
+  /*Position linked to section #hero-banner*/
+  display: inline;
+  position: absolute;
+  bottom: 2rem;
+  right: var(--right-space);
+
+  color: var(--dark-blue);
+  background-color: var(--light-blue);
+  font-size: 2.5rem;
+  padding: 0.5px 1rem 0.5px 1rem;
+  /*top margin only*/
+}
+/*---------- ////////// ----------*/
+
+
+/*---------- MAIN----------*/
+.flex-column {
+  display: var(--flex-parent);
+  flex-direction: var(--column);
+}
+
+.flex-row {
+  display: var(--flex-parent);
+}
+
+#page-wrapper {
+  /* flex-column*/
+  justify-content: var(--center);
+  margin: 2rem var(--right-space);
+}
+
+#page-wrapper>* {
+  margin-top: 2rem;
+}
+
+.page-section {
+  justify-content: center;
+  /* width: 80% auto; test*/
+}
+
+/*---------- MAIN TEXT (h2, h3, p) ----------*/
+
+#about h2,
+#work h2,
+#contact h2 {
+  flex: 1 0 12.2rem;
+  margin-right: var(--right-space);
+  padding-right: 0.8rem;
+  border-right: 3px solid var(--dark-blue);
+
+  color: var(--dark-blue);
+  font-size: var(--heading);
+  text-align: right;
+}
+
+#about P {
+  font-size: 1.8rem;
+  text-align: justify;
+}
+
+.project-text {
+  background-color: var(--light-blue);
+  display: inline-block;
+  padding: 1rem;
+
+  color: var(--dark-blue);
+  font-size: 1.5rem;
+}
+
+#project-text h3 {
+  color: var(--dark-blue);
+  font-size: 2rem;
+}
+
+
+/*---------- CONTENT ----------*/
+#about-content,
+#work-content,
+#contact-content {
+  flex: 3 1 75%;
+  /* width: to be set in relation to h1 size*/
+}
+
+#small-projects-section {
+  flex-wrap: var(--wrap);
+  justify-content: space-between;
+}
+
+/*---------- IMAGES ----------*/
+.small-projects {
+  position: relative;
+  flex: 45%;
+  height: 15rem;
+  overflow: hidden;
+  border: 5px solid var(--light-blue);
+}
+
+/*Add space between small-projects images*/
+#project2,
+#project4 {
+  margin-right: 0.8rem;
+}
+#project4,
+#project5 {
+  margin-top: 0.8rem;
+}
+
+#project1{
+  width: 100%;
+  position: center;
+  object-fit: cover;
+}
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.4;
+}
+
+/*Create tint to image*/
+.project-image{
+  background-color: var(--light-blue);
+}
+/* Tint is lessen on hover*/
+.project-image img:hover {
+  opacity: 0.7;
+} 
+
+/*Big image styling*/
+#project1 {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+#project1 img {
+  border: 5px solid var(--light-blue);
+}
+
+/*Text on top of image divs*/
+.project-text {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+}
+
+.image-sections {
+  /* class for #big-project and #small-project-section */
+  justify-content: space-between;
+
+}
+
+/*---------- FOOTER ----------*/
+
+#contact-nav {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: var(--right-space) 0;
+  width: 80% auto;
+  font-size: 1.5rem;
+}
+
+footer a{
+  color: var(--dark-blue);
+}
+
+#contact-nav li {
+  padding: 0.1rem;
+  margin: 0rem 0.5rem;
+  border-bottom: 2px solid var(--dark-blue);
+  color: var(--dark-blue);
+}
+
+/*---------- ///// ----------*/
+
+/*---------- MEDIA QUERIES ----------*/
+
+@media only screen and (max-width: 840px){
+  .small-projects {
+    flex: 80%;
+    height: 13rem; 
+}
+
+
+/* modify space between small img*/
+#project2,
+#project4 {
+  margin-right: 0rem;
+}
+#project3,
+#project4,
+#project5 {
+  margin-top: 0.8rem;
+}
+}
+
+@media only screen and (max-width: 567px){
+  header{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    padding: 0;
+  }
+
+  header h1 {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 2.2rem;
+  }
+
+  header nav {
+    width: auto;
+  }
+
+  #nav-list {
+    justify-content: center; 
+  }
+  /* #hero-banner h2{
+  display: block;
+  position: static;
+} */
+
+}
