@@ -1,10 +1,15 @@
 /*--------GLOBAL--------*/
 
 :root{
+    /*--colors--*/
     --black: #1e1e1a;
     --white: #f8f8f8; 
+
+    /*--measurements--*/
     --heading: 3.2rem;
     --text: 1.8rem;
+
+    /*--fonts--*/
     --quicksand: 'Quicksand', sans-serif;
     --shadows-into-light: 'Shadows Into Light', cursive;
     --source-code-pro: 'Source Code Pro', monospace;
@@ -12,11 +17,18 @@
 
 body{
     background-color:black;
+    background-image: url(../images/deco/texture.jpg);
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-size: cover;
 }
 
-/*--------HEADER--------*/
+
+/*---------- HEADER ----------*/
 
 header{
+    position: fixed;
+    background-color: var(--black);
     height: 14vh;
     box-shadow: 0px 7px 26px -12px rgba(128,128,128,0.79);
     -webkit-box-shadow: 0px 7px 26px -12px rgba(128,128,128,0.79);
@@ -28,24 +40,25 @@ header * {
     font-family: var(--source-code-pro);
 }
 
-.navbar{
+.navbar{ /* parent to navbar-brand (em with full name) & div containing ul */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 5.5rem;
 }
 
-.navbar-brand {
+.navbar-brand { /* em containing full name */
     font-size: var(--heading);   
+    font-style: normal;
 }
 
-.navbar-nav{
+.navbar-nav { /* webpage menu */
     margin-right: 0;
     margin-left: auto;
     font-size: var(--text);
 }
 
-.nav-item{
+.nav-item {
     padding-left: 3rem;
 }
 
@@ -61,3 +74,30 @@ header * {
     -moz-box-shadow: 0px -1px 3px 0px rgba(128,128,128,0.8);
     border-radius: 2px;
 }
+
+/*---------- HERO SECTION ----------*/
+.jumbotron {
+    position:relative;
+    top:14vh;
+    background-color: rgba(128, 128, 128, 0.052);
+    height: 50rem;  
+    padding: 0;
+}
+
+  .jumbotron #textdiv {
+    /* background-image: url(../images/deco/transparency.png); */
+    width: 100rem;
+    height: 50rem;
+    background-color: rgba(255, 255, 255, 0.797);
+    color: var(--black);
+    font-family: var(--source-code-pro);
+    font-weight: 800;
+  }
+
+  /*add typing animation*/
+  #textdiv h1{
+    padding-top: 2rem;
+    font-size: 10rem;
+  }
+
+  
