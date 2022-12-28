@@ -7,7 +7,7 @@
 
     /*--measurements--*/
     --heading: 3.2rem;
-    --text: 1.8rem;
+    --text: 2rem;
 
     /*--fonts--*/
     --quicksand: 'Quicksand', sans-serif;
@@ -27,9 +27,10 @@ body{
 /*---------- HEADER ----------*/
 
 header{
-    position: fixed;
+    position:fixed;
+    z-index: 1500;
     background-color: var(--black);
-    height: 14vh;
+    height: 11rem;
     box-shadow: 0px 7px 26px -12px rgba(128,128,128,0.79);
     -webkit-box-shadow: 0px 7px 26px -12px rgba(128,128,128,0.79);
     -moz-box-shadow: 0px 7px 26px -12px rgba(128,128,128,0.79);
@@ -75,29 +76,37 @@ header * {
     border-radius: 2px;
 }
 
+.navbar-collapse{
+    background-color: var(--black);
+}
+
 /*---------- HERO SECTION ----------*/
 .jumbotron {
-    position:relative;
-    top:14vh;
-    background-color: rgba(128, 128, 128, 0.052);
-    height: 50rem;  
-    padding: 0;
+    padding-top: 11rem;
+    background-color: rgba(128, 128, 128, 0.1);
+    height: auto;  
 }
 
   .jumbotron #textdiv {
     /* background-image: url(../images/deco/transparency.png); */
-    width: 100rem;
-    height: 50rem;
+    width: 120rem;
+    height: auto;
     background-color: rgba(255, 255, 255, 0.797);
     color: var(--black);
     font-family: var(--source-code-pro);
     font-weight: 800;
+    padding: 5rem;
   }
 
   /*add typing animation*/
   #textdiv h1{
-    padding-top: 2rem;
+    width: 100%;
     font-size: 10rem;
+  }
+  
+  #grow {
+    background-color: #0376ac;
+    color: var(--white);
   }
 
   
