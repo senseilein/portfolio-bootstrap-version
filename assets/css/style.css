@@ -24,13 +24,6 @@
     background-color: var(--black);
 }
 
-body{
-    background-image: url(../images/deco/matrix-by-Tobias_ET-Pixabay.jpg);
-    /* background-repeat: no-repeat; */
-    background-position: center;
-    background-size: cover;
-}
-
 
 /*---------- HEADER ----------*/
 
@@ -81,5 +74,33 @@ header{
     -webkit-box-shadow: var(--basic-shadow);
     -moz-box-shadow: var(--basic-shadow);
     border-radius: 3px;
+}
+
+/*---------- HERO SECTION ----------*/
+.jumbotron *  {
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.jumbotron {
+    background-image: url(../images/deco/matrix-by-Tobias_ET-Pixabay.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 16rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: auto;  
+    margin-top: 12.5rem;
+    height: 100vh;
+}
+
+.jumbotron .text {
+    color:var(--white);
+    font-size: 9rem;
+    height:fit-content;
+    padding: 1rem 0 3rem 0;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 4px 2px rgba(235, 242, 236, 0.6);
 }
 
