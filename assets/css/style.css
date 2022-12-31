@@ -1,0 +1,85 @@
+/*--------GLOBAL--------*/
+
+:root{
+    /*--colors--*/
+    --black: #000000;
+    --white: #f8f8f8; 
+
+    /*--box-shadows--*/
+    --basic-shadow: 0px -1px 3px 0px rgba(128,128,128,0.8);
+    --header-shadow: 0px 3px 20px -1px rgba(128,128,128,0.79);
+
+    /*--measurements--*/
+    --heading: 4rem;
+    --text: 2.5rem;
+
+    /*--fonts--*/
+    --quicksand: 'Quicksand', sans-serif;
+    --shadows-into-light: 'Shadows Into Light', cursive;
+    --source-code-pro: 'Source Code Pro', monospace;
+}
+
+* {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+body{
+    background-image: url(../images/deco/matrix-by-Tobias_ET-Pixabay.jpg);
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*---------- HEADER ----------*/
+
+header{
+    position:fixed;
+    z-index: 1500;
+    height: 12.5rem;
+    box-shadow: var(--header-shadow);
+    -webkit-box-shadow: var(--header-shadow);
+    -moz-box-shadow: var(--header-shadow);
+    font-family: var(--source-code-pro);
+}
+
+.navbar{ /* parent to navbar-brand (em with full name) & div containing ul */
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5.5rem;
+}
+
+.navbar-brand { /* em containing full name */
+    font-size: var(--heading);   
+    font-style: normal;
+}
+
+.navbar-nav { /* webpage menu */
+    margin-right: 0;
+    margin-left: auto;
+    font-size: var(--text);
+}
+
+.nav-item {
+    margin: 0.5rem auto 0.5rem 3rem;
+}
+
+.nav-item:hover{
+    box-shadow: var(--basic-shadow);
+    border-radius: 7px;
+}
+
+.navbar-toggler-icon{
+    background-image: url("../images/icons/menu-icon-light.ico");
+    width: 35px;
+    height: 35px;
+}
+
+.navbar-toggler-icon:hover {/*hamburger menu icon on small screen*/
+    box-shadow: var(--basic-shadow);
+    -webkit-box-shadow: var(--basic-shadow);
+    -moz-box-shadow: var(--basic-shadow);
+    border-radius: 3px;
+}
+
