@@ -14,8 +14,8 @@
 
     /*--measurements--*/
     --heading: 4rem;
-    --text: 2.5rem;
-    --text2: 2rem;
+    --nav-text: 2.5rem;
+    --text: 2rem;
     --span: 3rem;
 
     /*--fonts--*/
@@ -57,7 +57,7 @@ header{
 .navbar-nav { /* webpage menu */
     margin-right: 0;
     margin-left: auto;
-    font-size: var(--text);
+    font-size: var(--nav-text);
 }
 
 .nav-item {
@@ -112,7 +112,7 @@ header{
 
 /*---------- MAIN ----------*/
 
-h2-div {
+.h2-div {
     flex: 1 0;
 }
 
@@ -135,7 +135,7 @@ h2-div {
 	border-radius: 0.5rem;
 	box-shadow: 0.1rem 0.1rem 2rem 0.2rem var(--dark-gray);
 	font-family: var(--quicksand);
-	font-size: var(--text2);
+	font-size: var(--text);
 }
 
 #about-me #presentation span{ /*key words in presentation paragraph*/
@@ -159,4 +159,12 @@ h2-div {
     width: fit-content;
     height: fit-content;
     background-color: #254323;
+}
+
+/*---------- FOOTER----------*/
+
+#contact-nav{
+    color: var(--white);
+    font-size: var(--nav-text);
+    width: 90%;
 }
