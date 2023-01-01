@@ -40,9 +40,17 @@ code {
 ol,
 ul {
   list-style: none;
+  text-decoration: none;
 }
 
+
 a{
+  color: white;
   text-decoration: none;
   text-decoration-color: transparent;
+}
+
+a:hover{
+  color: white;
+  text-decoration: none;
 }

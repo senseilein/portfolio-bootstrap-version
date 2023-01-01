@@ -1,0 +1,170 @@
+/*--------GLOBAL--------*/
+
+:root{
+    /*--colors--*/
+    --black: #000000;
+    --white: #f8f8f8; 
+    --light-gray: #3e3c3c;
+    --dark-gray: #3b3c3b;
+
+    /*--box-shadows and borders--*/
+    --basic-shadow: 0px -1px 3px 0px rgba(128,128,128,0.8);
+    --section-shadow: 0px 3px 20px -1px rgba(128,128,128,0.79);
+    --basic-border: 0.5px solid var(--light-gray);
+
+    /*--measurements--*/
+    --heading: 4rem;
+    --nav-text: 2.5rem;
+    --text: 2rem;
+    --span: 3rem;
+
+    /*--fonts--*/
+    --quicksand: 'Quicksand', sans-serif;
+    --shadows-into-light: 'Shadows Into Light', cursive;
+    --source-code-pro: 'Source Code Pro', monospace;
+}
+
+body {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+
+/*---------- HEADER ----------*/
+
+header{
+    position:fixed;
+    z-index: 1500;
+    height: 12.5rem;
+    box-shadow: var(--section-shadow);
+    -webkit-box-shadow: var(--section-shadow);
+    -moz-box-shadow: var(--section-shadow);
+    font-family: var(--source-code-pro);
+    background-color: var(--black);
+}
+
+.navbar{ /* parent to navbar-brand (em with full name) & div containing ul */
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5.5rem;
+}
+
+.navbar-brand { /* em containing full name */
+    font-size: var(--heading);   
+    font-style: normal;
+}
+
+.navbar-nav { /* webpage menu */
+    margin-right: 0;
+    margin-left: auto;
+    font-size: var(--nav-text);
+}
+
+.nav-item {
+    margin: 0.5rem auto 0.5rem 3rem;
+}
+
+.nav-item:hover{
+    box-shadow: var(--basic-shadow);
+    border-radius: 7px;
+}
+
+.navbar-toggler-icon{
+    background-image: url("../images/icons/menu-icon-light.ico");
+    width: 35px;
+    height: 35px;
+}
+
+.navbar-toggler-icon:hover {/*hamburger menu icon on small screen*/
+    box-shadow: var(--basic-shadow);
+    -webkit-box-shadow: var(--basic-shadow);
+    -moz-box-shadow: var(--basic-shadow);
+    border-radius: 3px;
+}
+
+/*---------- HERO SECTION ----------*/
+.jumbotron *  {
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.jumbotron {
+    background-image: url(../images/deco/matrix-by-Tobias_ET-Pixabay.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 16rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: auto;  
+    margin: 12.5rem 0 0 0;
+    height: 84vh;
+}
+
+.jumbotron .text {
+    color:var(--white);
+    font-size: 9rem;
+    height:fit-content;
+    padding: 1rem 0 3rem 0;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 4px 2px rgba(235, 242, 236, 0.6);
+}
+
+/*---------- MAIN ----------*/
+
+.h2-div {
+    flex: 1 0;
+}
+
+.h2-div h2 {
+    font-size: var(--heading);
+    width: 100%;
+}
+
+/*---------- ABOUT ME ----------*/
+
+#about-me{
+    height: 70vh;
+    flex-direction: row;
+}
+
+#about-me #presentation {
+	line-height: 3.5rem;
+	width: 90%;
+	border: var(--basic-border);
+	border-radius: 0.5rem;
+	box-shadow: 0.1rem 0.1rem 2rem 0.2rem var(--dark-gray);
+	font-family: var(--quicksand);
+	font-size: var(--text);
+}
+
+#about-me #presentation span{ /*key words in presentation paragraph*/
+    font-weight: 1000;
+	font-size: var(--span);
+    color: white;
+}
+
+/*---------- WORK----------*/
+#work{
+    margin-bottom: 5rem;
+}
+
+#project-1,
+#projects-2-3,
+#projects-4-5{
+    width: 90%;
+}
+
+.card-img-overlay{
+    width: fit-content;
+    height: fit-content;
+    background-color: #254323;
+}
+
+/*---------- FOOTER----------*/
+
+#contact-nav{
+    color: var(--white);
+    font-size: var(--nav-text);
+    width: 90%;
+}
