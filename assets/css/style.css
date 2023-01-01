@@ -4,14 +4,19 @@
     /*--colors--*/
     --black: #000000;
     --white: #f8f8f8; 
+    --light-gray: #3e3c3c;
+    --dark-gray: #3b3c3b;
 
-    /*--box-shadows--*/
+    /*--box-shadows and borders--*/
     --basic-shadow: 0px -1px 3px 0px rgba(128,128,128,0.8);
-    --header-shadow: 0px 3px 20px -1px rgba(128,128,128,0.79);
+    --section-shadow: 0px 3px 20px -1px rgba(128,128,128,0.79);
+    --basic-border: 0.5px solid var(--light-gray);
 
     /*--measurements--*/
     --heading: 4rem;
     --text: 2.5rem;
+    --text2: 2rem;
+    --span: 3rem;
 
     /*--fonts--*/
     --quicksand: 'Quicksand', sans-serif;
@@ -19,7 +24,7 @@
     --source-code-pro: 'Source Code Pro', monospace;
 }
 
-* {
+body, * {
     color: var(--white);
     background-color: var(--black);
 }
@@ -31,9 +36,9 @@ header{
     position:fixed;
     z-index: 1500;
     height: 12.5rem;
-    box-shadow: var(--header-shadow);
-    -webkit-box-shadow: var(--header-shadow);
-    -moz-box-shadow: var(--header-shadow);
+    box-shadow: var(--section-shadow);
+    -webkit-box-shadow: var(--section-shadow);
+    -moz-box-shadow: var(--section-shadow);
     font-family: var(--source-code-pro);
 }
 
@@ -90,8 +95,8 @@ header{
     padding-top: 16rem;
     background-color: rgba(0, 0, 0, 0.1);
     height: auto;  
-    margin-top: 12.5rem;
-    height: 100vh;
+    margin: 12.5rem 0 0 0;
+    height: 84vh;
 }
 
 .jumbotron .text {
@@ -104,3 +109,33 @@ header{
     text-shadow: 2px 4px 2px rgba(235, 242, 236, 0.6);
 }
 
+/*---------- ABOUT ME ----------*/
+
+#about-me{
+    height: 80vh;
+    flex-direction: row;
+}
+
+#about-me h2-div {
+    flex: 1 0;
+}
+#about-me h2 {
+    font-size: var(--heading);
+    width: 100%;
+}
+
+#about-me #presentation {
+	line-height: 3.5rem;
+	width: 90%;
+	border: var(--basic-border);
+	border-radius: 0.5rem;
+	box-shadow: 0.1rem 0.1rem 2rem 0.2rem var(--dark-gray);
+	font-family: var(--quicksand);
+	font-size: var(--text2);
+}
+
+#about-me #presentation span{ /*key words in presentation paragraph*/
+    font-weight: 1000;
+	font-size: var(--span);
+    color: white;
+}
