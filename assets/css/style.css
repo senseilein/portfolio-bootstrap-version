@@ -24,7 +24,7 @@
     --source-code-pro: 'Source Code Pro', monospace;
 }
 
-body, * {
+body {
     color: var(--white);
     background-color: var(--black);
 }
@@ -40,6 +40,7 @@ header{
     -webkit-box-shadow: var(--section-shadow);
     -moz-box-shadow: var(--section-shadow);
     font-family: var(--source-code-pro);
+    background-color: var(--black);
 }
 
 .navbar{ /* parent to navbar-brand (em with full name) & div containing ul */
@@ -109,19 +110,22 @@ header{
     text-shadow: 2px 4px 2px rgba(235, 242, 236, 0.6);
 }
 
+/*---------- MAIN ----------*/
+
+h2-div {
+    flex: 1 0;
+}
+
+.h2-div h2 {
+    font-size: var(--heading);
+    width: 100%;
+}
+
 /*---------- ABOUT ME ----------*/
 
 #about-me{
-    height: 80vh;
+    height: 70vh;
     flex-direction: row;
-}
-
-#about-me h2-div {
-    flex: 1 0;
-}
-#about-me h2 {
-    font-size: var(--heading);
-    width: 100%;
 }
 
 #about-me #presentation {
@@ -138,4 +142,21 @@ header{
     font-weight: 1000;
 	font-size: var(--span);
     color: white;
+}
+
+/*---------- WORK----------*/
+#work{
+    margin-bottom: 5rem;
+}
+
+#project-1,
+#projects-2-3,
+#projects-4-5{
+    width: 90%;
+}
+
+.card-img-overlay{
+    width: fit-content;
+    height: fit-content;
+    background-color: #254323;
 }
