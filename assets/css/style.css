@@ -126,7 +126,7 @@ header{
 #about-me,
 #work,
 #contact{
-    scroll-margin-top: 12.5vh;
+    scroll-margin-top: 12.5vh; /* set to header height to avoid top of section to be cut off when accessing the section from nav menu*/
 }
 
 /*---------- ABOUT ME ----------*/
@@ -219,7 +219,6 @@ header{
     left:0%;
     padding: 1.25rem;/*need to add it manually because the card-img-overlay has it from Bootstrap setting*/
 }
-
 
 
 /*---------- FOOTER----------*/
