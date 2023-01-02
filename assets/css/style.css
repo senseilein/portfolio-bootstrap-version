@@ -1,5 +1,4 @@
 /*--------GLOBAL--------*/
-
 :root{
     /*--colors--*/
     --black: #000000;
@@ -28,7 +27,7 @@
 
 body {
     color: var(--white);
-    background-color: var(--black);
+    background-color: white;
 }
 
 
