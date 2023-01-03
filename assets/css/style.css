@@ -61,7 +61,7 @@ header{
     font-size: var(--nav-text);
 }
 
-.nav-item {
+header .nav-item {
     margin: 0.5rem auto 0.5rem 3rem;
 }
 
@@ -125,7 +125,7 @@ header{
 #about-me,
 #work,
 #contact{
-    scroll-margin-top: 12.5vh; /* set to header height to avoid top of section to be cut off when accessing the section from nav menu*/
+    scroll-margin-top: 17.2vh; /* set to header height (or a bit more) to avoid top of section to be cut off when accessing the section from nav menu*/
 }
 
 /*---------- ABOUT ME ----------*/
@@ -228,11 +228,17 @@ header{
     width: 90%;
 }
 
+.footer-nav-item:hover{
+    box-shadow: var(--basic-shadow);
+    border-radius: 7px;
+}
+
 #contact .icons {
     width: 6rem;
     height: 6rem;
 }
+
 #email-icon{
-    width: 8rem;
-    height: 8rem;
+    width: 6.8rem;
+    height: 6.8rem;
 }
