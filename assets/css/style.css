@@ -27,7 +27,7 @@
 
 body {
     color: var(--white);
-    background-color: white;
+    background-color:var(--black);
 }
 
 
@@ -226,4 +226,13 @@ header{
     color: var(--white);
     font-size: var(--nav-text);
     width: 90%;
+}
+
+#contact .icons {
+    width: 6rem;
+    height: 6rem;
+}
+#email-icon{
+    width: 8rem;
+    height: 8rem;
 }
