@@ -102,6 +102,7 @@ No installation needed
 - [Mike James](https://github.com/MikeCodesDotNET)
 - [Alfredo Creates](https://www.alfredocreates.com/portfolio/)
 - [Vectorlogozone](https://github.com/VectorLogoZone)
+- ["How to not cut off the top of your section when using anchor tags"](https://community.codenewbie.org/yuridevat/how-to-not-cut-off-the-top-of-your-section-when-using-anchor-tags-3mil) by [Julia Undeutsch](https://github.com/YuriDevAT)
 
 ## 📜 LICENSE
 
