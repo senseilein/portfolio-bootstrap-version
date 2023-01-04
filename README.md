@@ -66,6 +66,7 @@ It's done when:
 - [ ] The HTML document includes a <meta> description with a viewport and content attributes.
 - [ ] The HTML document contains a header with a navigation menu.
 - [ ] All the links in the navigation menu have an href attribute with a value equals to the corresponding section's id.
+- [ ] Each deployed application is presented in a Bootstrap card including an image and a short description.
 - [ ] All images for each deployed application are clickable and contain a descriptive alt attribute.
 - [ ] All links function correctly.
 - [ ] Application's CSS selectors and properties are consolidated and organized to follow semantic structure.
