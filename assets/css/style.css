@@ -99,10 +99,9 @@ header .nav-item {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    padding-top: 16rem;
-    height: auto;  
-    margin: 12.5rem 0 0 0;
-    height: 90vh;
+    padding: 15rem 0;  
+    margin: 8rem 0 0 0;
+    height: fit-content;
     background-color: var(--black);
 }
 
@@ -140,7 +139,7 @@ height: 4rem;
 /*---------- ABOUT ME ----------*/
 
 #about-me{
-    height: 70vh;
+    height: fit-content;
     flex-direction: row;
 }
 
@@ -251,3 +250,14 @@ height: 4rem;
     width: 6.8rem;
     height: 6.8rem;
 }
+
+/*---------- MEDIA QUERIES ----------*/
+
+ /* Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) { ... }
+
+/* Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) { ... } */
+
+/* Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) { ... } */ */
