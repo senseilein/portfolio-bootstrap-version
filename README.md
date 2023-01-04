@@ -33,16 +33,28 @@ SO THAT I can showcase my technical skills to potential collaborators
 ```
 
 ```
-GIVEN the portfolio website,
+GIVEN the portfolio webpage
 
-WHEN I
-THEN
+WHEN the page is loaded,
+THEN it contains a navigation menu, a jumbotron, an "about me" section, a work section and a contact section.
 
-WHEN
-THEN
+WHEN the user hovers on a link,
+THEN they can see a hover effect
 
-WHEN
-THEN
+WHEN one of the links in the navigation is clicked
+THEN the UI scrolls to the corresponding section
+
+WHEN viewing the section about my work
+THEN the section contains titled images of my applications
+
+WHEN presented with the first application
+THEN that application's image is larger in size than the others
+
+WHEN images of the applications are clicked
+THEN the user is taken to that deployed application
+
+WHEN the page is resized or viewed on various screens and devices
+THEN the layout is responsive and adapts to my viewport
 
 ```
 
@@ -50,11 +62,16 @@ THEN
 
 It's done when:
 
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+- [ ] HTML elements follow a logical structure independent of styling and positioning.
+- [ ] The HTML document includes a <meta> description with a viewport and content attributes.
+- [ ] The HTML document contains a header with a navigation menu.
+- [ ] All the links in the navigation menu have an href attribute with a value equals to the corresponding section's id.
+- [ ] All images for each deployed application are clickable and contain a descriptive alt attribute.
+- [ ] All links function correctly.
+- [ ] Application's CSS selectors and properties are consolidated and organized to follow semantic structure.
+- [ ] HTML and CSS files are properly commented.
+- [ ] CSS code contains media queries to make the website fully responsive.
+
 
 ## 🔧 TECHNOLOGY USED
 
