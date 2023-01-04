@@ -103,6 +103,7 @@ header .nav-item {
     height: auto;  
     margin: 12.5rem 0 0 0;
     height: 90vh;
+    background-color: var(--black);
 }
 
 .jumbotron .text {
