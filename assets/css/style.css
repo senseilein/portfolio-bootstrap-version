@@ -257,7 +257,11 @@ height: 4rem;
 /* @media (min-width: 576px) { ... }
 
 /* Medium devices (tablets, 768px and up) */
-/* @media (min-width: 768px) { ... } */
+@media (min-width: 768px) { 
+    .jumbotron .text {/*h1*/
+        font-size: 6.8rem;
+    }
+} 
 
 /* Large devices (desktops, 992px and up) */
-/* @media (min-width: 992px) { ... } */ */
+/* @media (min-width: 992px) { ... } */ 
