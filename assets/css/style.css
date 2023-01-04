@@ -106,6 +106,7 @@ header .nav-item {
 }
 
 .jumbotron .text {
+    line-height: 1.4;
     color:var(--white);
     font-size: 9rem;
     height:fit-content;
@@ -257,11 +258,12 @@ height: 4rem;
 /* @media (min-width: 576px) { ... }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+/* @media (max-width: 768px) { 
+}  */
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
     .jumbotron .text {/*h1*/
         font-size: 6.8rem;
     }
-} 
-
-/* Large devices (desktops, 992px and up) */
-/* @media (min-width: 992px) { ... } */ 
+}  
