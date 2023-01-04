@@ -98,9 +98,9 @@ No installation needed
 - Matrix image by [Tobias_ET](https://pixabay.com/users/tobias_et-5291314/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2354492) from [Pixabay](https://pixabay.com)  
 - All the icons are from the website: [https://icon-icons.com/](https://icon-icons.com/)  
 - Special thanks to the following icon creators: 
-[Mike James](https://github.com/MikeCodesDotNET)
-[Alfredo Creates](https://www.alfredocreates.com/portfolio/)
-[Vectorlogozone](https://github.com/VectorLogoZone)
+- [Mike James](https://github.com/MikeCodesDotNET)
+- [Alfredo Creates](https://www.alfredocreates.com/portfolio/)
+- [Vectorlogozone](https://github.com/VectorLogoZone)
 
 ## 📜 LICENSE
 
