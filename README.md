@@ -22,7 +22,7 @@ Recreating a new version of [this portfolio website](https://senseilein.github.i
 
 ## 💻 USAGE
 
-[**>> Visit the Bootstrap version of my portfolio website <<**](insert the link here)
+[**>> Visit the Bootstrap version of my portfolio website <<**](https://senseilein.github.io/portfolio-bootstrap-version/)
 
 ### 💬 User story
 
