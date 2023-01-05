@@ -293,6 +293,16 @@ height: 4rem;
         font-size: 1.5rem;
         line-height: 2;
     }
+
+    #contact .icons {
+        width: calc(6rem/2);
+        height: calc(6rem/2);
+    }
+
+    #email-icon{
+        width: calc(6.8rem/2);
+        height: calc(6.8rem/2);
+    } 
  }
 
 
