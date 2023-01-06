@@ -2,6 +2,7 @@
 
 ![](https://img.shields.io/badge/html-HTML5-orange?logo=html5)
 ![](https://img.shields.io/badge/css-CSS3-%231572B6?logo=css3)
+![](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fsenseilein.github.io%2Fportfolio-bootstrap-version)
 
 
 ## 🚩 TABLE OF CONTENT
