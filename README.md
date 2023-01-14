@@ -10,7 +10,7 @@
 
 - [Description](#-description)
 - [Usage](#-usage)
-- [Mock-up](#-mock-up)
+- [Preview](#-preview)
 - [Technology used](#-technology-used)
 - [Installation](#-installation)
 - [Credits](#-credits)
@@ -75,6 +75,9 @@ It's done when:
 - [ ] HTML and CSS files are properly commented.
 - [ ] CSS code contains media queries to make the website fully responsive.
 
+## PREVIEW
+
+![alt Webpage preview](./assets/images/deco/webpage-preview.png)
 
 ## 🔧 TECHNOLOGY USED
 
