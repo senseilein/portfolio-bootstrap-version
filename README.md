@@ -91,7 +91,7 @@ It's done when:
 
 ### ➕ Suggestions for improvement
 
-- Add a dark/light theme toggle
+- Implement a dark/light theme toggle
 - Improve responsiveness with media queries
 
 ## 🚀 INSTALLATION
